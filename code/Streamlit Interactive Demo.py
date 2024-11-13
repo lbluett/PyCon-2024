@@ -2,7 +2,6 @@ import streamlit as st
 st.set_page_config(layout="wide")
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util, CrossEncoder
-import torch
 import pickle
 
 @st.cache_data
