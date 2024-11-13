@@ -1,0 +1,4 @@
+pandas
+sentence_transformer
+torch
+pickle
