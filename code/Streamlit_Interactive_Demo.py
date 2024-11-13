@@ -7,7 +7,7 @@ import pickle
 @st.cache_data
 def load_speeches():
     # Load your data
-    df = pd.read_csv('pycon_2024_sessions.csv')
+    df = pd.read_csv('./code/pycon_2024_sessions.csv')
     df['Title'] = df['Title'].str.replace("—PyCon AU 2024", "")
     return df
 # Load your data
@@ -16,7 +16,7 @@ df_speeches = load_speeches()
 @st.cache_data
 def load_scores():
     # Load pickle
-    with open('related_articles_scores.pkl', 'rb') as f:
+    with open('./code/related_articles_scores.pkl', 'rb') as f:
         return pickle.load(f)
 
 related_articles = load_scores()
